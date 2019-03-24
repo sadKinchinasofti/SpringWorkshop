@@ -1,10 +1,6 @@
 package org.Package.SpringLifeCycle;
 
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
-
-public class Traingle implements InitializingBean,DisposableBean{
-	
+public class TraingleWithCustomizedInitAndCleanUp {
 	private Point pointA;
 	private Point pointB;
 	private Point pointC;
@@ -32,17 +28,12 @@ public class Traingle implements InitializingBean,DisposableBean{
 		System.out.println("Point 1: ("+getPointB().getX()+","+getPointB().getY()+")");
 		System.out.println("Point 1: ("+getPointC().getX()+","+getPointC().getY()+")");
 	}
-	@Override
-	public void afterPropertiesSet() throws Exception {
+	
+	public void myInit() {
 		System.out.println("Traingle bean is getting initialized");
-		
 	}
-	@Override
-	public void destroy() throws Exception {
+	
+	public void cleanUp() {
 		System.out.println("Destroying the traingle bean");
-		
 	}
-	
-	
-
 }
