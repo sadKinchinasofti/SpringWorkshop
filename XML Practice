@@ -1,1 +1,3 @@
-
+XML can be validated in two ways--1.against DTD(Document Type Definition),2.against XSD(XML Schema Definition)
+XML -- eXtensible Markup Language. it is designed to store and transport data,XML is designed to carry data not to display data.
+XML is self-descriptive which means it describes both content and structure. XMl is platform independent and language independent.
