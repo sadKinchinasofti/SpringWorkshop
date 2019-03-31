@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class DrawingApp {
 
 	public static void main(String[] args) {
-		AbstractApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("SpringWithLifecycle.xml");
 		context.registerShutdownHook();
         Traingle traingle = (Traingle)context.getBean("traingle");
         traingle.draw();
