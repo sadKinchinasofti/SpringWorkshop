@@ -1,3 +1,7 @@
 XML can be validated in two ways--1.against DTD(Document Type Definition),2.against XSD(XML Schema Definition)
 XML -- eXtensible Markup Language. it is designed to store and transport data,XML is designed to carry data not to display data.
 XML is self-descriptive which means it describes both content and structure. XMl is platform independent and language independent.
+Differences with HTML: 1. HTML is used to display data and the looks whereas XML is used to transport and store data.2. HTML is markup
+language whereas XML is framework for that. 3. HTML is not case sensitive whereas XML is case sensitive.4. HTML has its own predefined 
+tags whereas XML we can design tags as per need. 5. HTML is static whereas XML is dynamic 6. HTML does not preserve whitespace whereas
+XMl preserves whitespace.
